@@ -46,3 +46,4 @@ def get_user(authorization: Annotated[str, Header()]) -> GetUserResponse:
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail='token is not valid!'
             )
+

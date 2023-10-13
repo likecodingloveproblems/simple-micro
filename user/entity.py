@@ -7,4 +7,4 @@ class User(BaseModel):
     username: str
     password: str
     name: Optional[str] = None
-    token: str | None = None
+    token: Optional[str] = None

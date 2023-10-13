@@ -1,10 +1,17 @@
 version: '3'
 
 services:
-  fastapi:
+  user:
     build: ./user/
-    container_name: fastapi
+    container_name: user
     ports:
       - 5000:5000
+    restart: always
+
+  fastapi:
+    build: ./feedback/
+    container_name: feedback
+    ports:
+      - 5001:5001
     restart: always
 
